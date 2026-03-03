@@ -47,4 +47,5 @@ public class BookingRecord
             throw new ArgumentException("Seat Id must be valid");
         }
     }
+    public BookingRecord() { }
 }

@@ -18,4 +18,5 @@ public class Seat
             throw new ArgumentException("Invalid Seat Number");
         }
     }
+    public Seat() { }
 }

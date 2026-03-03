@@ -61,4 +61,6 @@ public class Employee
             throw new ArgumentNullException("Password cannot be empty");
         }
     }
+
+    public Employee() { }
 }
