@@ -1,8 +1,11 @@
-﻿using BookMySeat.Domain.Entities;
+﻿using BookMySeat.Domain.DTO;
+using BookMySeat.Domain.Entities;
 
 namespace BookMySeat.Application.Interfaces;
 
 public interface ISeatService
 {
-    public Task<List<Seat>> GetAllSeatsAsync();
+    Task<int> AddMultipleAsync(int seatsToAdd);
+    Task<int> RemoveMultipleAsync(int seatsToRemove);
+    Task<IEnumerable<SeatStatusDTO>> GetSeatsStatusAsync(DateTime date);
 }
